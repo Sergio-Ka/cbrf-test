@@ -1,0 +1,16 @@
+.menu {
+  display: inline-block;
+}
+
+.menu__item {
+  width: 3rem;
+  margin: 0 0 0 0;
+}
+
+.menu__item:first-child {
+  margin: 0 0 0 1.25rem;
+}
+
+.menu__item_invisible {
+  display: none;
+}

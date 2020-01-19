@@ -1,0 +1,21 @@
+.tree-item {
+  text-align: left;
+  cursor: pointer;
+}
+
+.tree-item__header {
+  display: flex;
+  border-bottom: 1px dashed #bbb;
+}
+
+.tree-item__header-left-side {
+  width: 80%;
+}
+
+.tree-item__header-right-side {
+  width: 20%;
+}
+
+.tree-item__content {
+  margin: 0.3rem 0 0 1.25rem;
+}
