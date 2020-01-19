@@ -1,6 +1,7 @@
 .application {
   display: flex;
   text-align: center;
+  min-height: 98vh;
 }
 
 .application__tree {
@@ -8,16 +9,19 @@
   padding: 1rem;
   margin: 1rem 0 0 1rem;
   border: 1px solid #000;
+  border-radius: 10px;
 }
 
 .application__output-area {
   width: 45%;
   padding: 1rem;
-  margin: 1rem 0 0 0;
+  margin: 1rem 0 0 1rem;
   border: 1px solid #000;
+  border-radius: 10px;
 }
 
 .application__textarea {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
 }

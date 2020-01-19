@@ -1,8 +1,9 @@
 import React from 'react';
 import { block } from 'bem-cn';
 
-import Menu from '../Menu/Menu.js';
-import TreeItem from './TreeItem/TreeItem.js';
+import Menu from '../Menu/Menu';
+import TreeItem from './TreeItem/TreeItem';
+
 import './Tree.css';
 
 const b = block('tree');
@@ -10,8 +11,9 @@ const b = block('tree');
 class Tree extends React.Component {
 
   render() {
-    const { rootName, initialData: { childrens, id }, onItemControlsClick } = this.props;
+    const { initialData: { childrens, id, name }, onItemControlsClick } = this.props;
     const topLevelMenuItemsVisibility = { add: true, delete: false, edit: true };
+    const rootName = name ? name : 'unknown';
 
     return (
       <div className={b()}>
@@ -30,7 +32,7 @@ class Tree extends React.Component {
         {childrens.map((child, index) => {
           return (
             <div className={b('content')} key={index}>
-              <TreeItem item={child} onItemControlsClick={onItemControlsClick}/>
+              <TreeItem item={child} onItemControlsClick={onItemControlsClick} />
             </div>
           );
         })}

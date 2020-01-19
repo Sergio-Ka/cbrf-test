@@ -1,5 +1,24 @@
-export const initialData = {
+const modalStyles = {
+  overlay: {
+    backgroundColor: 'rgba(0,0,0,0.7)'
+  },
+  content: {
+    position: 'relative',
+    padding: '1rem',
+    width: '35rem',
+    border: '1px solid #707070',
+    borderRadius: '5px',
+    backgroundColor: '#fff',
+    overflow: 'hidden',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+  },
+};
+
+const initialData = {
   id: 0,
+  name: 'Мой компьютер',
   childrens: [
     {
       id: 1,
@@ -8,14 +27,17 @@ export const initialData = {
         {
           id:11,
           name: 'фоточки',
+          childrens: [],
         },
         {
           id:12,
           name: 'документики',
+          childrens: [],
         },
         {
           id:13,
           name: 'прочее',
+          childrens: [],
         },
       ],
     },
@@ -24,34 +46,39 @@ export const initialData = {
       name: 'disc D:',
       childrens: [
         {
-          id:11,
+          id:21,
           name: 'Distributives',
+          childrens: [],
         },
         {
-          id:12,
+          id:22,
           name: 'Program Files',
           childrens: [
             {
-              id:121,
+              id:221,
               name: 'Adobe',
               childrens: [
                 {
-                  id:1211,
+                  id:2211,
                   name: 'adobe.exe',
+                  childrens: [],
                 },
                 {
-                  id:1212,
+                  id:2212,
                   name: 'adobe_x64.exe',
+                  childrens: [],
                 },
               ],
             },
             {
-              id:122,
+              id:222,
               name: 'system.ini',
+              childrens: [],
             },
             {
-              id:123,
+              id:223,
               name: 'swapfile.sys',
+              childrens: [],
             },
           ],
         },
@@ -64,16 +91,22 @@ export const initialData = {
         {
           id:31,
           name: 'pagefile.sys',
+          childrens: [],
         },
         {
           id:32,
           name: 'system.ini',
+          childrens: [],
         },
         {
           id:33,
           name: 'swapfile.sys',
+          childrens: [],
         },
       ],
     },
   ],
 };
+
+
+export { modalStyles, initialData };

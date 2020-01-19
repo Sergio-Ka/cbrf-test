@@ -5,7 +5,7 @@ import './Menu.css';
 
 const b = block('menu');
 
-class Menu extends React.Component {
+class Menu extends React.PureComponent {
 
   render() {
     const { itemsVisibilityMask } = this.props;

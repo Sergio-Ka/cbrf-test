@@ -1,0 +1,13 @@
+.modal__text {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.modal__content {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.modal__button {
+  margin-left: 1rem;
+}
