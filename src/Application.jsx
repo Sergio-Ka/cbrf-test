@@ -23,11 +23,14 @@ class Application extends React.Component {
 
     return (
       <div className={b()}>
-        <div className={b('tree')}>
-          <Tree initialData={this.state.tree} onItemControlsClick={this.handleItemControlsClick} />
-        </div>
-        <div className={b('output-area')}>
-          <textarea className={b('textarea')} readOnly value={JSON.stringify(this.state.tree)} />
+        <header className={b('header')}>Приложение для генерации дерева из статичного файла, управления узлами и генерации json</header>
+        <div className={b('content')}>
+          <div className={b('tree')}>
+            <Tree initialData={this.state.tree} onItemControlsClick={this.handleItemControlsClick} />
+          </div>
+          <div className={b('output-area')}>
+            <textarea className={b('textarea')} readOnly value={JSON.stringify(this.state.tree)} />
+          </div>
         </div>
         <Modal
           text="Enter new item name: "

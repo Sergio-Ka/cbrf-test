@@ -12,13 +12,13 @@ class Menu extends React.PureComponent {
 
     return (
       <div className={b()}>
-        <button className={b('item', { invisible: !itemsVisibilityMask.add })} onClick={this.handleAddButtonClick}>
+        <button className={b('item', { invisible: !itemsVisibilityMask.add, color: 'green' })} onClick={this.handleAddButtonClick}>
           {'add'}
         </button>
-        <button className={b('item', { invisible: !itemsVisibilityMask.delete })} onClick={this.handleDeleteButtonClick}>
+        <button className={b('item', { invisible: !itemsVisibilityMask.delete, color: 'red' })} onClick={this.handleDeleteButtonClick}>
           {'delete'}
         </button>
-        <button className={b('item', { invisible: !itemsVisibilityMask.edit })} onClick={this.handleEditButtonClick}>
+        <button className={b('item', { invisible: !itemsVisibilityMask.edit, color: 'yellow' })} onClick={this.handleEditButtonClick}>
           {'edit'}
         </button>
       </div>

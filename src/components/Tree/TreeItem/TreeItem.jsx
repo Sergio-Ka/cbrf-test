@@ -17,12 +17,16 @@ class TreeItem extends React.Component {
     return (
       <div className={b()}>
         <div className={b('header')}>
-          {itemName}
-          <Menu
-            itemsVisibilityMask={menuItemsVisibility}
-            onItemControlsClick={onItemControlsClick}
-            id={item.id}
-          />
+          <div className={b('header-left-side')}>
+            {itemName}
+          </div>
+          <div className={b('header-right-side')}>
+            <Menu
+              itemsVisibilityMask={menuItemsVisibility}
+              onItemControlsClick={onItemControlsClick}
+              id={item.id}
+            />
+          </div>
         </div>
         {item.childrens &&
           item.childrens.map((child, index) => {
