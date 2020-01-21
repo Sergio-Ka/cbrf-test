@@ -21,7 +21,7 @@ npm install
 
 ### Скрипты для сборки
 
-#### `npm start`
+#### `npm run start`
 
 дев сервер с перезагрузкой на лету по адресу [http://localhost:3000](http://localhost:3000).
 
